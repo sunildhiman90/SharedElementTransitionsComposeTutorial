@@ -19,24 +19,8 @@ class MainActivity : ComponentActivity() {
         //enableEdgeToEdge()
         setContent {
             SharedElementTransitionsComposeTutorialTheme {
-                UsersListApp()
+                SharedBoundsTransitionExample()
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    SharedElementTransitionsComposeTutorialTheme {
-        Greeting("Android")
     }
 }
